@@ -5011,7 +5011,7 @@ export namespace Prisma {
     expected: string | null
     stderr: string | null
     compileOutput: string | null
-    ststus: string | null
+    status: string | null
     memory: string | null
     time: string | null
     createdAt: Date | null
@@ -5027,7 +5027,7 @@ export namespace Prisma {
     expected: string | null
     stderr: string | null
     compileOutput: string | null
-    ststus: string | null
+    status: string | null
     memory: string | null
     time: string | null
     createdAt: Date | null
@@ -5043,7 +5043,7 @@ export namespace Prisma {
     expected: number
     stderr: number
     compileOutput: number
-    ststus: number
+    status: number
     memory: number
     time: number
     createdAt: number
@@ -5069,7 +5069,7 @@ export namespace Prisma {
     expected?: true
     stderr?: true
     compileOutput?: true
-    ststus?: true
+    status?: true
     memory?: true
     time?: true
     createdAt?: true
@@ -5085,7 +5085,7 @@ export namespace Prisma {
     expected?: true
     stderr?: true
     compileOutput?: true
-    ststus?: true
+    status?: true
     memory?: true
     time?: true
     createdAt?: true
@@ -5101,7 +5101,7 @@ export namespace Prisma {
     expected?: true
     stderr?: true
     compileOutput?: true
-    ststus?: true
+    status?: true
     memory?: true
     time?: true
     createdAt?: true
@@ -5204,7 +5204,7 @@ export namespace Prisma {
     expected: string
     stderr: string | null
     compileOutput: string | null
-    ststus: string
+    status: string
     memory: string | null
     time: string | null
     createdAt: Date
@@ -5239,7 +5239,7 @@ export namespace Prisma {
     expected?: boolean
     stderr?: boolean
     compileOutput?: boolean
-    ststus?: boolean
+    status?: boolean
     memory?: boolean
     time?: boolean
     createdAt?: boolean
@@ -5256,7 +5256,7 @@ export namespace Prisma {
     expected?: boolean
     stderr?: boolean
     compileOutput?: boolean
-    ststus?: boolean
+    status?: boolean
     memory?: boolean
     time?: boolean
     createdAt?: boolean
@@ -5273,7 +5273,7 @@ export namespace Prisma {
     expected?: boolean
     stderr?: boolean
     compileOutput?: boolean
-    ststus?: boolean
+    status?: boolean
     memory?: boolean
     time?: boolean
     createdAt?: boolean
@@ -5290,14 +5290,14 @@ export namespace Prisma {
     expected?: boolean
     stderr?: boolean
     compileOutput?: boolean
-    ststus?: boolean
+    status?: boolean
     memory?: boolean
     time?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type TestCaseResultOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "submissionId" | "testCase" | "passed" | "stdout" | "expected" | "stderr" | "compileOutput" | "ststus" | "memory" | "time" | "createdAt" | "updatedAt", ExtArgs["result"]["testCaseResult"]>
+  export type TestCaseResultOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "submissionId" | "testCase" | "passed" | "stdout" | "expected" | "stderr" | "compileOutput" | "status" | "memory" | "time" | "createdAt" | "updatedAt", ExtArgs["result"]["testCaseResult"]>
   export type TestCaseResultInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     submission?: boolean | SubmissionDefaultArgs<ExtArgs>
   }
@@ -5322,7 +5322,7 @@ export namespace Prisma {
       expected: string
       stderr: string | null
       compileOutput: string | null
-      ststus: string
+      status: string
       memory: string | null
       time: string | null
       createdAt: Date
@@ -5759,7 +5759,7 @@ export namespace Prisma {
     readonly expected: FieldRef<"TestCaseResult", 'String'>
     readonly stderr: FieldRef<"TestCaseResult", 'String'>
     readonly compileOutput: FieldRef<"TestCaseResult", 'String'>
-    readonly ststus: FieldRef<"TestCaseResult", 'String'>
+    readonly status: FieldRef<"TestCaseResult", 'String'>
     readonly memory: FieldRef<"TestCaseResult", 'String'>
     readonly time: FieldRef<"TestCaseResult", 'String'>
     readonly createdAt: FieldRef<"TestCaseResult", 'DateTime'>
@@ -7322,7 +7322,7 @@ export namespace Prisma {
     expected: 'expected',
     stderr: 'stderr',
     compileOutput: 'compileOutput',
-    ststus: 'ststus',
+    status: 'status',
     memory: 'memory',
     time: 'time',
     createdAt: 'createdAt',
@@ -7801,7 +7801,7 @@ export namespace Prisma {
     expected?: StringFilter<"TestCaseResult"> | string
     stderr?: StringNullableFilter<"TestCaseResult"> | string | null
     compileOutput?: StringNullableFilter<"TestCaseResult"> | string | null
-    ststus?: StringFilter<"TestCaseResult"> | string
+    status?: StringFilter<"TestCaseResult"> | string
     memory?: StringNullableFilter<"TestCaseResult"> | string | null
     time?: StringNullableFilter<"TestCaseResult"> | string | null
     createdAt?: DateTimeFilter<"TestCaseResult"> | Date | string
@@ -7818,7 +7818,7 @@ export namespace Prisma {
     expected?: SortOrder
     stderr?: SortOrderInput | SortOrder
     compileOutput?: SortOrderInput | SortOrder
-    ststus?: SortOrder
+    status?: SortOrder
     memory?: SortOrderInput | SortOrder
     time?: SortOrderInput | SortOrder
     createdAt?: SortOrder
@@ -7838,7 +7838,7 @@ export namespace Prisma {
     expected?: StringFilter<"TestCaseResult"> | string
     stderr?: StringNullableFilter<"TestCaseResult"> | string | null
     compileOutput?: StringNullableFilter<"TestCaseResult"> | string | null
-    ststus?: StringFilter<"TestCaseResult"> | string
+    status?: StringFilter<"TestCaseResult"> | string
     memory?: StringNullableFilter<"TestCaseResult"> | string | null
     time?: StringNullableFilter<"TestCaseResult"> | string | null
     createdAt?: DateTimeFilter<"TestCaseResult"> | Date | string
@@ -7855,7 +7855,7 @@ export namespace Prisma {
     expected?: SortOrder
     stderr?: SortOrderInput | SortOrder
     compileOutput?: SortOrderInput | SortOrder
-    ststus?: SortOrder
+    status?: SortOrder
     memory?: SortOrderInput | SortOrder
     time?: SortOrderInput | SortOrder
     createdAt?: SortOrder
@@ -7879,7 +7879,7 @@ export namespace Prisma {
     expected?: StringWithAggregatesFilter<"TestCaseResult"> | string
     stderr?: StringNullableWithAggregatesFilter<"TestCaseResult"> | string | null
     compileOutput?: StringNullableWithAggregatesFilter<"TestCaseResult"> | string | null
-    ststus?: StringWithAggregatesFilter<"TestCaseResult"> | string
+    status?: StringWithAggregatesFilter<"TestCaseResult"> | string
     memory?: StringNullableWithAggregatesFilter<"TestCaseResult"> | string | null
     time?: StringNullableWithAggregatesFilter<"TestCaseResult"> | string | null
     createdAt?: DateTimeWithAggregatesFilter<"TestCaseResult"> | Date | string
@@ -8296,7 +8296,7 @@ export namespace Prisma {
     expected: string
     stderr?: string | null
     compileOutput?: string | null
-    ststus: string
+    status: string
     memory?: string | null
     time?: string | null
     createdAt?: Date | string
@@ -8313,7 +8313,7 @@ export namespace Prisma {
     expected: string
     stderr?: string | null
     compileOutput?: string | null
-    ststus: string
+    status: string
     memory?: string | null
     time?: string | null
     createdAt?: Date | string
@@ -8328,7 +8328,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -8345,7 +8345,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -8361,7 +8361,7 @@ export namespace Prisma {
     expected: string
     stderr?: string | null
     compileOutput?: string | null
-    ststus: string
+    status: string
     memory?: string | null
     time?: string | null
     createdAt?: Date | string
@@ -8376,7 +8376,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -8392,7 +8392,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -8846,7 +8846,7 @@ export namespace Prisma {
     expected?: SortOrder
     stderr?: SortOrder
     compileOutput?: SortOrder
-    ststus?: SortOrder
+    status?: SortOrder
     memory?: SortOrder
     time?: SortOrder
     createdAt?: SortOrder
@@ -8866,7 +8866,7 @@ export namespace Prisma {
     expected?: SortOrder
     stderr?: SortOrder
     compileOutput?: SortOrder
-    ststus?: SortOrder
+    status?: SortOrder
     memory?: SortOrder
     time?: SortOrder
     createdAt?: SortOrder
@@ -8882,7 +8882,7 @@ export namespace Prisma {
     expected?: SortOrder
     stderr?: SortOrder
     compileOutput?: SortOrder
-    ststus?: SortOrder
+    status?: SortOrder
     memory?: SortOrder
     time?: SortOrder
     createdAt?: SortOrder
@@ -9995,7 +9995,7 @@ export namespace Prisma {
     expected: string
     stderr?: string | null
     compileOutput?: string | null
-    ststus: string
+    status: string
     memory?: string | null
     time?: string | null
     createdAt?: Date | string
@@ -10010,7 +10010,7 @@ export namespace Prisma {
     expected: string
     stderr?: string | null
     compileOutput?: string | null
-    ststus: string
+    status: string
     memory?: string | null
     time?: string | null
     createdAt?: Date | string
@@ -10141,7 +10141,7 @@ export namespace Prisma {
     expected?: StringFilter<"TestCaseResult"> | string
     stderr?: StringNullableFilter<"TestCaseResult"> | string | null
     compileOutput?: StringNullableFilter<"TestCaseResult"> | string | null
-    ststus?: StringFilter<"TestCaseResult"> | string
+    status?: StringFilter<"TestCaseResult"> | string
     memory?: StringNullableFilter<"TestCaseResult"> | string | null
     time?: StringNullableFilter<"TestCaseResult"> | string | null
     createdAt?: DateTimeFilter<"TestCaseResult"> | Date | string
@@ -10660,7 +10660,7 @@ export namespace Prisma {
     expected: string
     stderr?: string | null
     compileOutput?: string | null
-    ststus: string
+    status: string
     memory?: string | null
     time?: string | null
     createdAt?: Date | string
@@ -10675,7 +10675,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -10690,7 +10690,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -10705,7 +10705,7 @@ export namespace Prisma {
     expected?: StringFieldUpdateOperationsInput | string
     stderr?: NullableStringFieldUpdateOperationsInput | string | null
     compileOutput?: NullableStringFieldUpdateOperationsInput | string | null
-    ststus?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
     memory?: NullableStringFieldUpdateOperationsInput | string | null
     time?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string

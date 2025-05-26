@@ -94,6 +94,7 @@ testCases TestCaseResult[]
 
 model TestCaseResult{
    id String @id @default(uuid())
+
    submissionId String
    testCase Int
    passed Boolean
@@ -101,7 +102,7 @@ model TestCaseResult{
    expected String
    stderr String?
    compileOutput String?
-   ststus String
+   status String
    memory String?
    time String?
 
