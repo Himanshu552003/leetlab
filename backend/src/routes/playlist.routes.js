@@ -1,11 +1,12 @@
 import express from "express"
-import { authMiddleware } from "../middleware/auth.middleware";
+import { authMiddleware } from "../middleware/auth.middleware.js";
 import { addProblemToPlaylist, createPlaylist, getAllListDetails, getPlaylistDetails, deletePlaylist, removeProblemFromPlaylist } from "../controllers/playlist.controller.js";
 
 
 const playlistRoutes=express.Router()
 
 playlistRoutes.get("/", authMiddleware, getAllListDetails);
+
 playlistRoutes.get("/:playlistId", authMiddleware, getPlaylistDetails);
 
 playlistRoutes.post("/create-playlist", authMiddleware, createPlaylist);
